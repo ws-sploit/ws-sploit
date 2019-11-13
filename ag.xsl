@@ -3,7 +3,7 @@
   <xsl:template match="/">
     <html>
       <body>
-        <xsl:value-of select="php:function('scandir', '/challenges/web_serveur/ch50/')" />
+        <xsl:value-of select="php:function('scandir', '/challenges/web-serveur/ch50/')" />
       </body>
     </html>
   </xsl:template>
