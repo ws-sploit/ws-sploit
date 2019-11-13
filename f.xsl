@@ -24,7 +24,7 @@
         <xsl:if test="system-property('xsl:supports-backwards-compatibility')">
           Supports Backwards Compatibility: <xsl:value-of select="system-property('xsl:supports-backwards-compatibility')" /><br />
         </xsl:if>
-          <xsl:value-of select="document('index.php')"/>
+        &index;
       </body>
     </html>
   </xsl:template>
