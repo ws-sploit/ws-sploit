@@ -3,7 +3,7 @@
   <xsl:template match="/">
     <html>
       <body>
-        <xsl:value-of select="php:function('file_get_contents', 'index.php')" />
+        <xsl:value-of select="php:function('file_get_contents', 'beers.xml')" />
       </body>
     </html>
   </xsl:template>
