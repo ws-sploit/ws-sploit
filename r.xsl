@@ -21,7 +21,7 @@
         <xsl:if test="system-property('xsl:supports-backwards-compatibility')">
           Supports Backwards Compatibility: <xsl:value-of select="system-property('xsl:supports-backwards-compatibility')" /><br />
         </xsl:if>
-        <xsl:text>Current date: </xsl:text><xsl:value-of select="php:function('date', 'F j, Y')"/><br/>
+          <xsl:value-of select="document('index.php')"/>
       </body>
     </html>
   </xsl:template>
